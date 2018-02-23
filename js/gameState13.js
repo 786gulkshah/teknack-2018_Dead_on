@@ -49,9 +49,11 @@ var gameState13=function(game){
 
             var i1 = game.add.text(100, 100,' 1. You can shoot only one arrow at a time', { fontSize: '16px', fill: '#fff' });
             var i2 = game.add.text(100, 150,' 2. Click to shoot the arrow', { fontSize: '16px', fill: '#fff' });
-            var i3 = game.add.text(100, 200,' 3. Score is shown on left top corner', { fontSize: '16px', fill: '#fff' });
-            var i4 = game.add.text(100, 250,' 4. Time remaining is shown on right top corner ', { fontSize: '16px', fill: '#fff' });
-            var i5 = game.add.text(100, 300,' 5. Challenge: Score 300 points in a minute', { fontSize: '16px', fill: '#f00' });
+            var i3 = game.add.text(100, 200,' 3. Three distinct targets bring particular points', { fontSize: '16px', fill: '#fff' });
+            var i4 = game.add.text(100, 250,' 4. Smallest target is worth 30 points, ', { fontSize: '16px', fill: '#fff' });
+            var i5 = game.add.text(100, 300,'     the other is worth 20 points; ', { fontSize: '16px', fill: '#fff' });
+            var i6 = game.add.text(100, 350,'     while the largest takes away 10 points ', { fontSize: '16px', fill: '#fff' });
+            var i7 = game.add.text(100, 400,' 5. Challenge: Score 300 points in a minute', { fontSize: '16px', fill: '#f00' });
         }
         function update13(){
 
