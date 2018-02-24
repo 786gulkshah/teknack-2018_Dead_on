@@ -37,6 +37,7 @@ var gameState1= function(game){
 			}
 
 			function quitdown() {
+				window.location = "https://teknack.in";
 				console.log('quit button down: Go to Teknack page');
 			}
 
