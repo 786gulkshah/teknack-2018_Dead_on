@@ -1,36 +1,36 @@
-			var gameState12=function(game){
-    			console.log("Hard_Play");
-			}
-			gameState12.prototype={
-		    	preload : preload12,
-		    	create : create12,
-		    	update : update12,
+            var gameState12=function(game){
+                console.log("Hard_Play");
+            }
+            gameState12.prototype={
+                preload : preload12,
+                create : create12,
+                update : update12,
                 createTimer: createTimer1,
                  updateTimer: updateTimer1
-			}; 
+            }; 
 
-		function preload12(){
-     		 game.load.image('background', 'assets/bgm6.jpg');
+        function preload12(){
+             game.load.image('background', 'assets/bgm6.jpg');
   game.load.image('arrow', 'assets/arroww.png');
    game.load.image('ground', 'assets/platform.png');
    game.load.image('bow','assets/bow3.png');
    game.load.audio('collide',['assets/audio/collide.mp3', 'assets/audio/collide.ogg']);
     game.load.image('board','assets/ball14.png');
-			
-		}
+            
+        }
 
-		var arrow,platforms;
+        var arrow,platforms;
 var bulletPool,boardHit3,boardHit1,boardHit2;
 var diamond1,diamond2,diamond3;
 var score3=0,result;
 
 
-		function create12(){
+        function create12(){
 
-			game.scale.pageAlignVertically = true;
-			game.scale.pageAlignHorizontally = true;
-			game.scale.setShowAll();
-			game.scale.refresh();
+            game.scale.pageAlignVertically = true;
+            game.scale.pageAlignHorizontally = true;
+            game.scale.setShowAll();
+            game.scale.refresh();
 
   game.physics.startSystem(Phaser.Physics.ARCADE);
     game.add.sprite(0, 0, 'background');
@@ -60,7 +60,7 @@ ground3.body.immovable = true;
 
 
      diamond1 = game.add.group();
-	   diamond1.enableBody = true;
+       diamond1.enableBody = true;
 
   diamond2 = game.add.group();
      diamond2.enableBody = true;
@@ -133,10 +133,10 @@ bullet.scale.setTo(1.8,1.2);
         me.updateTimer();
     });
 
-		}
+        }
 
-		function update12(){
-			var me=this;
+        function update12(){
+            var me=this;
    game.physics.arcade.collide(diamond1, platforms, function(diamond, platforms) {
         //gotHit(bullet,diamond)
         console.log("board ground");
@@ -213,7 +213,7 @@ bullet.kill();
     //Do what you need to do
     game.state.start('gameState14');
 }
-		}
+        }
 
 function moveBoard1() {
  var p =Math.random()*100;
