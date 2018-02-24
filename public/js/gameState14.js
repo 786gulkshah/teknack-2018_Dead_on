@@ -20,6 +20,7 @@
 				game.scale.setShowAll();
 				game.scale.refresh();
 
+				game.add.image(0,0,'background');
 				 if(score3 < 300){
         		scoreText3 = game.add.text(400, 100,'You Lost!! :(',{fontSize:'32px',fill:'#FFF'});
         		scoreText3.anchor.setTo(0.5,0.5);  
@@ -27,7 +28,10 @@
         		scoreText4.anchor.setTo(0.5,0.5);  
         		scoreText5 = game.add.text(400, 200,'Time Remaining:- 00:00 ',{fontSize:'32px',fill:'#FFF'});
         		scoreText5.anchor.setTo(0.5,0.5);   
+        		//console.log("score3" + score3);
+        		//mytext =game.add.text(400,100,"Hard_WL");
         		score3 =0;
+
     		}
     		else{
          		scoreText3 = game.add.text(400, 100,'You Won!! :)',{fontSize:'32px',fill:'#FFF'});
@@ -36,11 +40,9 @@
         		scoreText4.anchor.setTo(0.5,0.5);  
         		scoreText5 = game.add.text(400, 200,'Time Remaining:-  '+result,{fontSize:'32px',fill:'#FFF'});
         		scoreText5.anchor.setTo(0.5,0.5);  
+        	//	console.log("score3" + score3);
         		score3 =0; 
 			}
-
-
-				game.add.image(0,0,'background');
 				playAgainButton = game.add.button(300,300, 'playAgainButton', actionOnClick, this);
 				modesButton = game.add.button(300,400, 'modesButton', actionOnClick, this);
 				playAgainButton.onInputDown.add(playagaindown, this);

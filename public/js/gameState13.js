@@ -53,7 +53,7 @@ var gameState13=function(game){
             var i4 = game.add.text(100, 250,' 4. Smallest target is worth 30 points, ', { fontSize: '16px', fill: '#fff' });
             var i5 = game.add.text(100, 300,'     the other is worth 20 points; ', { fontSize: '16px', fill: '#fff' });
             var i6 = game.add.text(100, 350,'     while the largest takes away 10 points ', { fontSize: '16px', fill: '#fff' });
-            var i7 = game.add.text(100, 400,' 5. Challenge: Score 300 points in a minute', { fontSize: '16px', fill: '#f00' });
+            var i7 = game.add.text(100, 400,' 5. Challenge: Score 300 points in Two minutes', { fontSize: '16px', fill: '#f00' });
         }
         function update13(){
 

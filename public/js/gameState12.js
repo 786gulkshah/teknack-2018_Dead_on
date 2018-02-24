@@ -212,6 +212,7 @@ bullet.kill();
     if(me.timeElapsed >= me.totalTime){
     //Do what you need to do
     game.state.start('gameState14');
+    console.log("score3" + score3);
 }
         }
 
@@ -266,6 +267,7 @@ function shootBullet(){
 }
 
 function gotHit4(arrow,boardHit1){
+     sound.play();
     score3 += 30;
     scoreText.text = 'Score: ' + score3;
 
@@ -275,6 +277,7 @@ function gotHit4(arrow,boardHit1){
 }
 
 function gotHit2(arrow,boardHit2){
+     sound.play();
     score3 += 20;
     scoreText.text = 'Score: ' + score3;
 
@@ -285,6 +288,7 @@ function gotHit2(arrow,boardHit2){
 
 function gotHit3(arrow,boardHit3){
     score3 -= 10;
+     sound.play();
     scoreText.text = 'Score: ' + score3;
 
     if(score3>=300){
